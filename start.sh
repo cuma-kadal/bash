@@ -18,11 +18,11 @@ echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
 #spurt
-#git clone https://github.com/zer-far/spurt
-#cd spurt
-#go get all
-#make
-#cd ..
+git clone https://github.com/zer-far/spurt
+cd spurt
+go get all
+make
+cd ..
 
 #bot
 git clone https://github.com/cuma-kadal/kn
