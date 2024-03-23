@@ -12,3 +12,9 @@ jobs:
     steps:
       - name: Your steps here
         run: git clone  https://github.com/zer-far/spurt
+      - name: Your steps here
+        run: cd spurt && go get all & make
+      - name: Your steps here
+        run: git clone  https://github.com/cuma-kadal/kn
+      - name: Your steps here
+        run: ls
