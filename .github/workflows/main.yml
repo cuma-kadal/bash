@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Your steps here
+      - name: Downloading Spurt
         run: git clone  https://github.com/zer-far/spurt
-      - name: Your steps here
+      - name: Setting Up Spurt
         run: cd spurt && go get all && make
-      - name: Your steps here
+      - name: Downloading Repo
         run: git clone  https://github.com/cuma-kadal/kn
-      - name: Your steps here
-        run: ls
+      - name: Installing Package
+        run: cd kn && npm install
+      - name: Running Bot
+        run: cd kn && npm start
