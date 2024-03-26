@@ -15,7 +15,7 @@ jobs:
       - name: Setting Up Spurt
         run: cd spurt && go get all && make
       - name: Downloading Repo
-        run: git clone  https://github.com/cuma-kadal/kn
+        run: git clone  https://github.com/cuma-kadal/new
       - name: Installing Package
         run: cd kn && npm install
       - name: Running Bot
