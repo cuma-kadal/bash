@@ -17,6 +17,6 @@ jobs:
       - name: Downloading Repo
         run: git clone  https://github.com/cuma-kadal/new
       - name: Installing Package
-        run: cd kn && npm install
+        run: cd new && npm install
       - name: Running Bot
-        run: cd kn && npm start
+        run: cd new && npm start
