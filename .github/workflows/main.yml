@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setting time
+        run: sudo timedatectl set-timezone Asia/Jakarta
       - name: Downloading Spurt
         run: git clone  https://github.com/zer-far/spurt
       - name: Setting Up Spurt
