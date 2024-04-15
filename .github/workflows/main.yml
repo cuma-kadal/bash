@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setting time
+      - name: Setting Ffmpeg
         run: sudo apt install ffmpeg -y
       - name: Setting time
         run: sudo timedatectl set-timezone Asia/Jakarta
