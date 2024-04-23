@@ -1,0 +1,28 @@
+name: NodeJS
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+        uses: actions/checkout@v3
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+      - name: time
+        run: sudo timedatectl set-timezone Asia/Jakarta
+      - name: Downloading Spurt
+        run: git clone  https://github.com/zer-far/spurt
+      - name: Setting Up Spurt
+        run: cd spurt && go get all && make
+      - name: Installing Package
+        run: npm install
+      - name: Running Bot
+        run: npm start
